@@ -1,17 +1,15 @@
-package web.entity;
+package web.model;
 
-import java.util.List;
-
-public class Cars {
+public class Car {
     private int series;
     private String color;
     private String model;
 
-    public Cars() {
+    public Car() {
 
     }
 
-    public Cars(int series, String color, String model) {
+    public Car(int series, String color, String model) {
         this.series = series;
         this.color = color;
         this.model = model;
@@ -43,10 +41,9 @@ public class Cars {
 
     @Override
     public String toString() {
-        return "Cars{" +
+        return
                 "series=" + series +
-                ", color='" + color + '\'' +
-                ", model='" + model + '\'' +
-                '}';
+                        ", color='" + color + '\'' +
+                        ", model='" + model + '\'';
     }
 }
